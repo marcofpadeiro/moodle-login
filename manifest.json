@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "moodle-login",
+    "version": "1.0",
+    "description": "Auto login on moodle site",
+    "icons": {
+        "48": "icons/moodle-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://ead.ipleiria.pt/*/login/index.php"
+            ],
+            "js": [
+                "moodle-login.js"
+            ]
+        }
+    ]
+}
